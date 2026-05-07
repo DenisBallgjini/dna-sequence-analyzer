@@ -1,24 +1,33 @@
 # DNA Sequence Analyzer
 
-Python tool that analyzes DNA sequences by counting nucleotide patterns (A, C, G, T) and validating sequence integrity.
+A Python-based DNA sequence analysis tool that validates genetic sequences, calculates nucleotide frequencies, and measures GC content.
 
 ## Features
-- Counts DNA nucleotides
-- Validates DNA sequences
-- Rejects invalid characters
-- Calculates total sequence length
 
-## Technologies
+- DNA sequence validation
+- Nucleotide counting (A, C, G, T)
+- GC-content calculation
+- Sequence length analysis
+- Input error handling
+
+## Technologies Used
+
 - Python 3
 
-## Example
+## Example Output
 
-Input:
-ACGTACGTAAA
+=== DNA Analysis Results ===
+Adenine (A): 5
+Cytosine (C): 2
+Guanine (G): 2
+Thymine (T): 2
 
-Output:
-A: 5
-C: 2
-G: 2
-T: 2
-Total length: 11
+Total Length: 11 bases
+GC Content: 36.36%
+
+## Future Improvements
+
+- STR pattern matching
+- FASTA file support
+- DNA visualization
+- Mutation detection
