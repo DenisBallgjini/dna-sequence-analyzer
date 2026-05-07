@@ -8,11 +8,23 @@ def analyze_dna(sequence):
             print("Error: Only A, C, G, T allowed.")
             return
 
-    print("A:", sequence.count("A"))
-    print("C:", sequence.count("C"))
-    print("G:", sequence.count("G"))
-    print("T:", sequence.count("T"))
-    print("Total length:", len(sequence))
+    a_count = sequence.count("A")
+    c_count = sequence.count("C")
+    g_count = sequence.count("G")
+    t_count = sequence.count("T")
+
+    total_length = len(sequence)
+
+    gc_content = ((g_count + c_count) / total_length) * 100
+
+    print("\n=== DNA Analysis Results ===")
+    print(f"Adenine (A):  {a_count}")
+    print(f"Cytosine (C): {c_count}")
+    print(f"Guanine (G):  {g_count}")
+    print(f"Thymine (T):  {t_count}")
+
+    print(f"\nTotal Length: {total_length} bases")
+    print(f"GC Content:   {gc_content:.2f}%")
 
 
 dna = input("Enter DNA sequence: ")
